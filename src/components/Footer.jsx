@@ -48,10 +48,10 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
-                <span className="text-secondary font-bold text-xl">M+</span>
+                <span className="text-secondary font-bold text-xl">V+</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">MediCare</h3>
+                <h3 className="text-xl font-bold">Valens Hospital</h3>
                 <p className="text-sm text-white/60">Hospital & Research Center</p>
               </div>
             </div>
@@ -117,21 +117,21 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
                 <span className="text-white/70 text-sm">
-                  123 Medical Center Drive,
+                  14/2, Yelankha New Town,
                   <br />
-                  Healthcare City, HC 12345
+                  Bangalore, Karnataka 560064
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
                 <div className="text-sm">
-                  <p className="text-white/70">Emergency: +1 (800) 123-4567</p>
-                  <p className="text-white/70">Reception: +1 (800) 123-4568</p>
+                  <p className="text-white/70">Emergency: +91 98450 12345</p>
+                  <p className="text-white/70">Reception: +91 98450 67890</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span className="text-white/70 text-sm">info@medicare.com</span>
+                <span className="text-white/70 text-sm">contact@valenshospital.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-secondary flex-shrink-0" />
@@ -139,14 +139,14 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
+        </div >
+      </div >
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10">
+      < div className="border-t border-white/10" >
         <div className="container-healthcare py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/50 text-sm">
-            © {new Date().getFullYear()} MediCare Hospital. All rights reserved.
+            © {new Date().getFullYear()} Valens Hospital. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-white/50 hover:text-secondary transition-colors">
@@ -160,8 +160,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
-    </footer>
+      </div >
+    </footer >
   );
 };
 

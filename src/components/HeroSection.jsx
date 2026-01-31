@@ -89,7 +89,7 @@ const HeroSection = () => {
               {/* Main Image Container */}
               <div className="relative rounded-3xl overflow-hidden shadow-healthcare-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=2091&auto=format&fit=crop"
+                  src="https://plus.unsplash.com/premium_photo-1661746550876-08772b846d9b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Professional medical team"
                   className="w-full h-[500px] object-cover"
                 />

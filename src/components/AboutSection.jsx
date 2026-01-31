@@ -59,12 +59,12 @@ const AboutSection = () => {
           {/* Right - Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-primary font-semibold mb-2">About MediCare</p>
+              <p className="text-primary font-semibold mb-2">About Valens Hospital</p>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Your Trusted Partner in Healthcare Excellence
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                At MediCare Hospital, we combine cutting-edge medical technology with
+                At Valens Hospital, we combine cutting-edge medical technology with
                 compassionate care to deliver exceptional healthcare services. Our
                 state-of-the-art facilities and world-renowned specialists work together
                 to ensure the best possible outcomes for every patient.

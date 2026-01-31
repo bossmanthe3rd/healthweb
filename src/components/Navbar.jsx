@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>Emergency: +1 (800) 123-4567</span>
+              <span>Emergency: +91 98450 12345</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>123 Medical Center Drive</span>
+              <span>Yelankha, Bangalore</span>
             </div>
           </div>
           <Link
@@ -64,21 +64,20 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <nav
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-md"
-            : "bg-white"
-        }`}
+        className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
+          ? "bg-white/95 backdrop-blur-md shadow-md"
+          : "bg-white"
+          }`}
       >
         <div className="container-healthcare">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
               <div className="w-12 h-12 bg-healthcare-gradient rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">M+</span>
+                <span className="text-white font-bold text-xl">V+</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">MediCare</h1>
+                <h1 className="text-xl font-bold text-foreground">Valens Hospital</h1>
                 <p className="text-xs text-muted-foreground">Hospital & Research Center</p>
               </div>
             </Link>

@@ -18,59 +18,149 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const doctorsData = {
-  "sarah-johnson": {
+  "dr-rishika-malhotra": {
     id: 1,
-    name: "Dr. Sarah Johnson",
+    name: "Dr. Rishika Malhotra",
     specialty: "Cardiology",
     experience: "15+ Years",
     rating: 4.9,
     reviews: 234,
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop",
-    education: ["MD, Harvard Medical School", "Fellowship in Cardiology, Mayo Clinic"],
-    certifications: ["American Board of Internal Medicine", "Cardiovascular Disease Certification"],
-    languages: ["English", "Spanish"],
-    about: "Dr. Sarah Johnson is a board-certified cardiologist with over 15 years of experience in diagnosing and treating heart conditions. She specializes in preventive cardiology, heart failure management, and interventional procedures. Dr. Johnson is known for her patient-centered approach and commitment to helping patients achieve optimal heart health.",
+    image: "https://images.unsplash.com/photo-1659353888906-adb3e0041693?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    education: ["MD, AIIMS New Delhi", "Fellowship in Cardiology, Narayana Health"],
+    certifications: ["Cardiological Society of India", "Interventional Cardiology Certification"],
+    languages: ["English", "Hindi", "Punjabi"],
+    about: "Dr. Rishika Malhotra is a renowned cardiologist with over 15 years of experience in diagnosing and treating complex heart conditions. She specializes in preventive cardiology and interventional procedures.",
     specializations: ["Preventive Cardiology", "Heart Failure", "Coronary Artery Disease", "Echocardiography", "Cardiac Rehabilitation"],
-    location: "Building A, Floor 3, Room 301",
-    consultationFee: 150,
+    location: "Block A, Floor 3, Room 301",
+    consultationFee: 1500,
     availableDays: ["Monday", "Tuesday", "Wednesday", "Friday"],
     timeSlots: ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM"],
   },
-  "michael-chen": {
+  "dr-rakesh-gupta": {
     id: 2,
-    name: "Dr. Michael Chen",
+    name: "Dr. Rakesh Gupta",
     specialty: "Orthopedics",
     experience: "12+ Years",
     rating: 4.8,
     reviews: 189,
     image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop",
-    education: ["MD, Stanford University", "Orthopedic Surgery Residency, UCSF"],
-    certifications: ["American Board of Orthopedic Surgery", "Sports Medicine Certification"],
-    languages: ["English", "Mandarin"],
-    about: "Dr. Michael Chen is a fellowship-trained orthopedic surgeon specializing in sports medicine and joint replacement surgery. With over 12 years of experience, he has helped thousands of patients return to active lifestyles through both surgical and non-surgical treatments.",
+    education: ["MS Ortho, CMC Vellore", "Fellowship in Joint Replacement, Apollo Hospitals"],
+    certifications: ["Indian Orthopaedic Association", "Sports Medicine Certification"],
+    languages: ["English", "Hindi", "Kannada"],
+    about: "Dr. Rakesh Gupta is a leading orthopedic surgeon specializing in joint replacements and sports injuries. He uses minimally invasive techniques for faster recovery.",
     specializations: ["Joint Replacement", "Sports Injuries", "Arthroscopy", "Fracture Care", "Spine Surgery"],
-    location: "Building B, Floor 2, Room 205",
-    consultationFee: 175,
+    location: "Block B, Floor 2, Room 205",
+    consultationFee: 1200,
     availableDays: ["Monday", "Wednesday", "Thursday", "Saturday"],
     timeSlots: ["8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM"],
   },
-  "emily-williams": {
+  "dr-sunighda-chawla": {
     id: 3,
-    name: "Dr. Emily Williams",
+    name: "Dr. Sunighda Chawla",
     specialty: "Pediatrics",
     experience: "10+ Years",
     rating: 4.9,
     reviews: 312,
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2787&auto=format&fit=crop",
-    education: ["MD, Johns Hopkins University", "Pediatric Residency, Children's Hospital of Philadelphia"],
-    certifications: ["American Board of Pediatrics", "Pediatric Advanced Life Support"],
-    languages: ["English", "French"],
-    about: "Dr. Emily Williams is a compassionate pediatrician dedicated to the health and well-being of children from infancy through adolescence. Her warm approach and expertise make her a favorite among both children and parents.",
+    image: "https://plus.unsplash.com/premium_photo-1682089874677-3eee554feb19?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    education: ["MD Pediatrics, PGIMER Chandigarh", "Neonatology Fellowship, Rainbow Children's Hospital"],
+    certifications: ["Indian Academy of Pediatrics", "Neonatal Advanced Life Support"],
+    languages: ["English", "Hindi"],
+    about: "Dr. Sunighda Chawla provides comprehensive care for children from newborns to adolescents. Her gentle approach makes her a favorite among young patients.",
     specializations: ["General Pediatrics", "Developmental Pediatrics", "Adolescent Medicine", "Vaccinations", "Nutrition Counseling"],
-    location: "Building C, Floor 1, Room 102",
-    consultationFee: 125,
+    location: "Block C, Floor 1, Room 102",
+    consultationFee: 1000,
     availableDays: ["Tuesday", "Wednesday", "Thursday", "Friday"],
     timeSlots: ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM"],
+  },
+  "dr-amit-verma": {
+    id: 4,
+    name: "Dr. Amit Verma",
+    specialty: "Neurology",
+    experience: "18+ Years",
+    rating: 4.7,
+    reviews: 156,
+    image: "https://images.unsplash.com/photo-1659353887222-630895f23cc5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    education: ["DM Neurology, NIMHANS Bangalore", "Fellowship in Stroke Medicine"],
+    certifications: ["Indian Academy of Neurology", "Stroke Specialist"],
+    languages: ["English", "Hindi", "Tamil"],
+    about: "Dr. Amit Verma is a distinguished neurologist with expertise in stroke management, epilepsy, and headache disorders.",
+    specializations: ["Stroke Management", "Epilepsy", "Headache & Migraine", "Neuropathy", "Movement Disorders"],
+    location: "Block A, Floor 4, Room 405",
+    consultationFee: 2000,
+    availableDays: ["Monday", "Thursday"],
+    timeSlots: ["10:00 AM", "11:00 AM", "12:00 PM"],
+  },
+  "dr-neha-patel": {
+    id: 5,
+    name: "Dr. Neha Patel",
+    specialty: "Dermatology",
+    experience: "8+ Years",
+    rating: 4.8,
+    reviews: 198,
+    image: "https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?q=80&w=2076&auto=format&fit=crop",
+    education: ["MD Dermatology, KMC Manipal"],
+    certifications: ["Indian Association of Dermatologists", "Cosmetic Dermatology"],
+    languages: ["English", "Hindi", "Gujarati"],
+    about: "Dr. Neha Patel offers advanced dermatological care and cosmetic treatments for healthy, glowing skin.",
+    specializations: ["Acne Treatment", "Anti-aging", "Laser Therapy", "Hair Loss", "Skin Allergies"],
+    location: "Block B, Floor 1, Room 105",
+    consultationFee: 1200,
+    availableDays: ["Monday", "Wednesday", "Friday"],
+    timeSlots: ["10:00 AM", "11:00 AM", "2:00 PM", "4:00 PM"],
+  },
+  "dr-sanjay-mehta": {
+    id: 6,
+    name: "Dr. Sanjay Mehta",
+    specialty: "Cardiology",
+    experience: "20+ Years",
+    rating: 4.9,
+    reviews: 421,
+    image: "https://images.unsplash.com/photo-1637059824899-a441006a6875?q=80&w=752&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    education: ["DM Cardiology, Sri Jayadeva Institute"],
+    certifications: ["Interventional Cardiology"],
+    languages: ["English", "Kannada"],
+    about: "Dr. Sanjay Mehta is a senior cardiologist known for his expertise in complex angioplasties and heart valve interventions.",
+    specializations: ["Angioplasty", "Pacemaker Implantation", "Valve Replacement"],
+    location: "Block A, Floor 3, Room 304",
+    consultationFee: 1800,
+    availableDays: ["Tuesday", "Thursday", "Saturday"],
+    timeSlots: ["9:00 AM", "11:00 AM", "1:00 PM"],
+  },
+  "dr-anaya-singh": {
+    id: 7,
+    name: "Dr. Anaya Singh",
+    specialty: "Gynecology",
+    experience: "14+ Years",
+    rating: 4.9,
+    reviews: 287,
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop",
+    education: ["MS OBG, Lady Hardinge Medical College"],
+    certifications: ["FOGSI Member", "Infertility Specialist"],
+    languages: ["English", "Hindi"],
+    about: "Dr. Anaya Singh specializes in high-risk pregnancies and laparoscopic gynecological surgeries.",
+    specializations: ["High-risk Pregnancy", "Laparoscopy", "Infertility", "PCOS Management"],
+    location: "Block C, Floor 2, Room 202",
+    consultationFee: 1400,
+    availableDays: ["Monday", "Wednesday", "Friday"],
+    timeSlots: ["10:00 AM", "12:00 PM", "3:00 PM"],
+  },
+  "dr-rahul-nair": {
+    id: 8,
+    name: "Dr. Rahul Nair",
+    specialty: "ENT",
+    experience: "11+ Years",
+    rating: 4.7,
+    reviews: 143,
+    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=2864&auto=format&fit=crop",
+    education: ["MS ENT, JIPMER Pondicherry"],
+    certifications: ["Head and Neck Surgery"],
+    languages: ["English", "Malayalam"],
+    about: "Dr. Rahul Nair offers comprehensive care for ear, nose, and throat disorders with a focus on endoscopic sinus surgery.",
+    specializations: ["Sinus Surgery", "Hearing Loss", "Vertigo", "Throat Disorders"],
+    location: "Block B, Floor 3, Room 305",
+    consultationFee: 1100,
+    availableDays: ["Tuesday", "Thursday", "Saturday"],
+    timeSlots: ["9:00 AM", "11:00 AM", "4:00 PM"],
   },
 };
 
@@ -260,7 +350,7 @@ const DoctorProfile = () => {
             <div className="card-healthcare">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-muted-foreground">Consultation Fee</span>
-                <span className="text-2xl font-bold text-primary">${doctor.consultationFee}</span>
+                <span className="text-2xl font-bold text-primary">₹{doctor.consultationFee}</span>
               </div>
               <Button className="w-full btn-healthcare" size="lg">
                 <Phone className="w-4 h-4 mr-2" />
@@ -305,13 +395,12 @@ const DoctorProfile = () => {
                         setSelectedDate(date);
                         setSelectedTime(null);
                       }}
-                      className={`p-2 rounded-lg text-center text-xs transition-all ${
-                        isSelected
-                          ? "bg-primary text-white"
-                          : available && !isPast
+                      className={`p-2 rounded-lg text-center text-xs transition-all ${isSelected
+                        ? "bg-primary text-white"
+                        : available && !isPast
                           ? "bg-muted hover:bg-primary/10"
                           : "bg-muted/50 text-muted-foreground cursor-not-allowed"
-                      }`}
+                        }`}
                     >
                       <div className="font-medium">{date.toLocaleDateString("en-US", { weekday: "short" })}</div>
                       <div className="text-lg font-bold">{date.getDate()}</div>
@@ -329,11 +418,10 @@ const DoctorProfile = () => {
                       <button
                         key={idx}
                         onClick={() => setSelectedTime(time)}
-                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                          selectedTime === time
-                            ? "bg-primary text-white"
-                            : "bg-muted hover:bg-primary/10"
-                        }`}
+                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${selectedTime === time
+                          ? "bg-primary text-white"
+                          : "bg-muted hover:bg-primary/10"
+                          }`}
                       >
                         {time}
                       </button>

@@ -173,18 +173,16 @@ const BookAppointment = () => {
                 {[1, 2].map((s) => (
                   <div key={s} className="flex items-center gap-2">
                     <div
-                      className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
-                        step >= s
+                      className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${step >= s
                           ? "bg-primary text-white"
                           : "bg-muted text-muted-foreground"
-                      }`}
+                        }`}
                     >
                       {s}
                     </div>
                     <span
-                      className={`text-sm ${
-                        step >= s ? "text-foreground" : "text-muted-foreground"
-                      }`}
+                      className={`text-sm ${step >= s ? "text-foreground" : "text-muted-foreground"
+                        }`}
                     >
                       {s === 1 ? "Personal Info" : "Medical Details"}
                     </span>
@@ -204,7 +202,7 @@ const BookAppointment = () => {
                           name="firstName"
                           value={formData.firstName}
                           onChange={handleInputChange}
-                          placeholder="John"
+                          placeholder="Rahul"
                           required
                           className="input-healthcare"
                         />
@@ -216,7 +214,7 @@ const BookAppointment = () => {
                           name="lastName"
                           value={formData.lastName}
                           onChange={handleInputChange}
-                          placeholder="Doe"
+                          placeholder="Kumar"
                           required
                           className="input-healthcare"
                         />
@@ -245,7 +243,7 @@ const BookAppointment = () => {
                           type="tel"
                           value={formData.phone}
                           onChange={handleInputChange}
-                          placeholder="+1 (555) 000-0000"
+                          placeholder="+91 99999 99999"
                           required
                           className="input-healthcare"
                         />
@@ -409,7 +407,7 @@ const BookAppointment = () => {
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">Consultation Fee</span>
                   <span className="text-xl font-bold text-primary">
-                    ${doctor.consultationFee}
+                    ₹{doctor.consultationFee}
                   </span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">

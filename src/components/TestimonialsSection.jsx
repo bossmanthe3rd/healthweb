@@ -5,25 +5,25 @@ import { Button } from "@/components/ui/button";
 const testimonials = [
   {
     id: 1,
-    name: "Jennifer Martinez",
+    name: "Anjali Desai",
     treatment: "Cardiac Surgery",
     rating: 5,
-    text: "The entire team at MediCare was exceptional. From the moment I walked in, I felt cared for. Dr. Johnson performed my cardiac surgery with incredible skill, and the nursing staff made my recovery comfortable. I'm forever grateful.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop",
+    text: "The entire team at Valens Hospital was exceptional. From the moment I walked in, I felt cared for. Dr. Malhotra performed my cardiac surgery with incredible skill, and the nursing staff made my recovery comfortable. I'm forever grateful.",
+    image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=2070&auto=format&fit=crop",
     date: "2 weeks ago",
   },
   {
     id: 2,
-    name: "Robert Thompson",
+    name: "Rajesh Kumar",
     treatment: "Knee Replacement",
     rating: 5,
-    text: "After years of knee pain, Dr. Chen gave me my life back. The surgery was smooth, and the physical therapy team helped me walk again in just weeks. Best decision I ever made choosing MediCare.",
+    text: "After years of knee pain, Dr. Gupta gave me my life back. The surgery was smooth, and the physical therapy team helped me walk again in just weeks. Best decision I ever made choosing Valens Hospital.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop",
     date: "1 month ago",
   },
   {
     id: 3,
-    name: "Sarah Williams",
+    name: "Priya Sharma",
     treatment: "Pediatric Care",
     rating: 5,
     text: "Dr. Williams is amazing with children. My son was so scared, but she made him feel completely at ease. The pediatric ward is colorful and welcoming. We've found our family's healthcare home.",
@@ -32,10 +32,10 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "David Lee",
+    name: "Vikram Singh",
     treatment: "General Checkup",
     rating: 5,
-    text: "I've been coming to MediCare for my annual checkups for 5 years now. The staff is always professional, appointments run on time, and the facilities are top-notch. Highly recommend!",
+    text: "I've been coming to Valens Hospital for my annual checkups for 5 years now. The staff is always professional, appointments run on time, and the facilities are top-notch. Highly recommend!",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop",
     date: "1 week ago",
   },
@@ -129,11 +129,10 @@ const TestimonialsSection = () => {
               {testimonials.map((_, index) => (
                 <button
                   key={index}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentIndex
-                      ? "w-8 bg-primary"
-                      : "bg-primary/20"
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all ${index === currentIndex
+                    ? "w-8 bg-primary"
+                    : "bg-primary/20"
+                    }`}
                   onClick={() => setCurrentIndex(index)}
                 />
               ))}
